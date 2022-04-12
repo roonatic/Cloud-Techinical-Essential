@@ -1,0 +1,57 @@
+<4강 - EC2>
+[개요]
+Elastic Compute Cloud
+ - Virtual Machine
+ - 인스턴스(Instance)
+ - 재구성이 가능한 컴퓨팅 리소스
+ - 쉽게 확장 / 축소되는 컴퓨팅 용량
+ - 다양한 인스턴스 타입 제공
+ - 사용한만큼만 과금
+
+ * AMI
+ - Amazon 관리: 각 지역에서 Amazon에 의해 관리되는 Linux 및 Windows 이미지들
+ - 커뮤니티 관리: 다른 AWS 사용자 및 마켓플레이스 파트너에 의해 관리되고 유지되는 공개 이미지들
+ - 사용자 머신 이미지: 사용자가 EC2 인스턴스로부터 생성한 AMI로 다른 계정에 공개 가능
+
+ * 인스턴스 유형: 필요에 따라 유형 선택하여 사용
+  - T2: 버스팅
+  - M4: 범용
+  - D2: 고밀도 저장소
+  - R4:메모리 집약
+  - X1: 대용량 메모리
+  - I3: 높은 I/O
+  - C4: 연산 집약
+  - G2: 그래픽 집약
+  - P2: 범용 GPU
+  - F1: FPGA
+
+ * 인스턴스 키페어: 비밀번호를 담고 있는 파일로 한 번 다운받으면 재다운로드가 불가능함.
+
+ * 인스턴스 접속 방법
+  - Windows
+    : PuTTY를 사용
+  - Linux / Mac
+    : SSH 사용(Terminal)
+
+ * EIP(Elastic IP)
+ : 인스턴스의 IP를 고정적으로 할당한 IP
+
+ * Security Group: 보안 그룹
+
+ * EBS(Elastic Block Store)
+ : 인스턴스가 사용할 스토리지 서비스 (예: 하드디스크)
+  - SDD 기반과 HDD 기반 다 갖고 있음
+
+ * ELB(Elastic Load Balancer)
+ : 서버에 가해지는 부하를 분산해주는 장치
+  - Scale up: 기존 서버 자체의 성능을 확장시켜 서버를 늘리는 방법
+  - Scale out: 같은 사양의 서버를 여러개 추가하여 증설하는 방법
+
+  * ELB healthCheck
+
+  * AutoScaling
+  : 필요할 때만 서버를 증설하고 축소시켜 서버가 안정적으로 작동되게 하는 기능
+
+  * CloudWatch
+  : AWS Resouce 상태를 모니터링하는 장치
+  
