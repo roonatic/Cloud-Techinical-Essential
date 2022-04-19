@@ -1,0 +1,35 @@
+<6-1강 - AWS App Mesh>
+[개요]
+ * AWS App Mesh: MSA(Microservice Architecture)를 위한 Service Mesh
+ 애플리케이션 수준의 네트워킹을 통해 서비스에서 여러 유형의 컴퓨팅 인프라와 원활하게 서비스할 수 있게 하주는 Service Mesh
+ Microservice application 간의 통신을 쉽게 모니터링하고 제어할 수 있게 도와주는 서비스
+ proxy로 구분됨
+proxy: Microservice Container에서 들어오고 나가는 모든 트래픽을 제어하고 보안기능도 제공
+*Amazon Cloudwatch / AWS X-Ray
+
+* CloudFront
+: AWS에서 제공해주는 CDN(Content Delivery Network) 서비스
+- 캐싱을 통해서 사용자에게 보다 빠른 전송속도를 제공하는 목적으로 하는 서비스
+
+- 구성 및 작동 방식
+* 구성요소
+ - Origin Server: S3, EC2 인스턴스
+ - Edge Server(Edge Location)
+* 작동방식
+1. 사용자의 요청
+2. Edge Server에 캐싱여부 확인
+3. 캐싱 데이터가 존재하면 응답 / 캐싱 데이터가 존재하지 않으면 Origin Server로 요청
+4. Origin Server로부터 전달받은 캐싱 데이터를 Edge Server에 저장하며 사용자에게 전송
+
+*Route53
+: AWS에서 제공하는 DNS 웹서비스
+ - 도메인 등록
+ - DNS 라우팅
+ - Health Check
+
+ 접근방법
+- AWS Management Console
+- AWS SDK
+- Route 53 API
+- AWS CLI
+- AWS tools for Windows Powershell

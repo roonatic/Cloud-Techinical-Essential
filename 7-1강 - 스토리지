@@ -1,0 +1,32 @@
+RDS(Relational Database Service)
+: 관계형 데이터베이스를 간편하게 설정, 운영, 확장할 수 있도록 웹서비스
+
+ * RDS DB 엔진
+  - Amazon Aurora
+  - MySQL
+  - ORACLE
+  - PostgreSQL
+  - MariaDB
+  - Microsoft SQL Server
+
+  장점
+- 관리 용이성
+- 뛰어난 확장성
+- 높은 가용성과 내구성
+- 빠른 속도
+- 안전한 보안
+
+* DynamoDb
+- 규모에 상관없이 빠르고 유연한 완전관리형 NoSQL 데이터베이스 서비스
+
+* RDS와 DynamoDB의 차이
+                            RDS                                         DynamoDb
+데이터접근                  SQL이 주로 사용되고 다양한 툴들이 사용          AWS 콘솔, AWS CLI 등
+성능                        스토리지 최적화                                컴퓨팅 최적화
+스케일링                    스케일 업                                       스케일 아웃
+쿼리                        유연한 쿼리                                   RDS보다 효율적이지 못한 쿼리
+쿼리비용                    상대적으로 높음                                상대적으로 저렴
+
+
+* ElastiCache
+: 인 메모리 데이터 스토어 또는 캐시를 손쉽게 배포, 운영 및 확장할 수 있게 해주는 웹 서비스
