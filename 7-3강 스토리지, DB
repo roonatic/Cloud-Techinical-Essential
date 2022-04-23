@@ -1,0 +1,30 @@
+<7-3강 스토리지, DB 개념>
+[개요]
+Storage: 컴퓨터, 서버에 데이터를 저장하는 저장소 역할을 수행하는 부품
+
+ * 저장장치 유형
+  - 플로피디스크
+  - CD
+  - USB
+
+ * 기업 스토리지
+  - TAPE: 속도 느리지만 30년 가까이 저장 가능
+  - HDD
+  - SSD(Solid State Drive): 하드디스크보다 수배빠르며 비용이 HDD보다 비쌈
+  - NVMe: 노트북에서 많이 사용자
+
+ * 연결방식에 따른 저장장치 종류
+ DAS(Direct Attached Stroage): 서버와 저장장치를 직접 연결하여 사용하는 방식
+  - 직접 연결하기에 속도가 빠름
+ NAS(Network Attached Stroage): 서버와 저장장치를 이더넷 등 LAN 방식의 네트워크에 연결된 방식
+ SAN(Storage Area Network): 일반적으로 사용하는 LAN 대신에 광케이블(FC Cable)을 사용하는 고속 네트워크 시스템
+
+ * DB(DateBase): DB 어플레이케이션 / Data 그 자체
+ 
+ * DBMS(Database Management System): DB를 관리하고 운영하는 소프트웨어
+
+ * DBMS 분류
+ - 계층형(Hierarchical): 처음 구성을 완료하면 변경하기 까다로움
+ - 망형(Network)
+ - 관계형(Relational): 테이블 단위로 구성되고 하나 이상의 행과 하나 이상의 열로 구성
+ 
